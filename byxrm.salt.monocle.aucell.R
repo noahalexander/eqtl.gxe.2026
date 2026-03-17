@@ -1,5 +1,6 @@
 #segregants 
 #names.df = read.delim("/Users/noahalexander/sc.chemostat.out/2rpm/filtered_feature_bc_matrix/features.tsv", header = F)
+#the only major takaways from this script for the manuscript are the aucell values. These were used for the esr activity mapping but the state assignment was repeated in seurat/documented in other scripts.
 
 cds.t0 <- load_mm_data(mat_path = "/Users/noahalexander/seg_cellranger_report/t0/filtered_feature_bc_matrix/matrix.mtx", 
   feature_anno_path = "/Users/noahalexander/seg_cellranger_report/t0/filtered_feature_bc_matrix/features.tsv", 
