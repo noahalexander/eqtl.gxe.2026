@@ -1,4 +1,5 @@
 names.df = read.delim("/Users/noahalexander/3004.salt/t0/filtered_feature_bc_matrix/features.tsv", header = F)
+#the only major takaways from this script for the manuscript are the aucell values. These were used for the esr activity mapping but the state assignment was repeated in seurat/documented in other scripts.
 
 
 cds.t0 <- load_mm_data(mat_path = "/Users/noahalexander/3004.salt/t0/filtered_feature_bc_matrix/matrix.mtx.gz", 
