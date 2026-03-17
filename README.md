@@ -13,6 +13,8 @@ cbsxyjm.salt.monocle.aucell.R: same as the above but with data for the CBSxYJM c
 
 byxrm.salt.monocle.aucell.R: same as the above but with data for the BYxRM cros during the salt perturbation.
 
+pca.segs.R: to conduct pca and generate plots of PC1 and PC2 coordinates with ESR activity values. 
+
 seurat.processing.segregants.R: initial read in and clustering/state assignment of each cross:timepoint combination.
 
 seurat.object.postprocessing.R: generation of output files reflecting the cluster/state assignments.
