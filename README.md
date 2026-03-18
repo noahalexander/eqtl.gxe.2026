@@ -23,7 +23,7 @@ enrichment.testing.fxn.R: a function to conduct enrichment testing using gprofil
 
 combined.level.enrichment.testing.R: enrichment testing for hotspots identified at the combined level.
 
-byxrm.enrichment.testing.R: enrichment testing for hotspots identified at the state level in byxrm experiments.
+byxrm.state.enrichment.testing.R: enrichment testing for hotspots identified at the state level in byxrm experiments.
 
 3004.enrichment.testing.R: same as above but for the CBSxYJM cross.
 
