@@ -25,7 +25,7 @@ combined.level.enrichment.testing.R: enrichment testing for hotspots identified 
 
 byxrm.state.enrichment.testing.R: enrichment testing for hotspots identified at the state level in byxrm experiments.
 
-3004.enrichment.testing.R: same as above but for the CBSxYJM cross.
+cbsxyjm.state.enrichment.testing.R: same as above but for the CBSxYJM cross.
 
 cbsxyjm.state.qtl.granges.R: modify ESR activity QTL confidence intervals to be at most 15kb. note: add same for BYxRM salt and sp experiments.
 
