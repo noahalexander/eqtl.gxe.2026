@@ -130,19 +130,19 @@ A_t0 <- prep_lod_long(
   "t0"
 )
 
-A_t30 <- prep_lod_long(
-  "/Users/noahalexander/repeat_fine_mapping/combined/A/sp/t30/state_pheno_LODs.RDS",
-  "t30"
+A_t10 <- prep_lod_long(
+  "/Users/noahalexander/repeat_fine_mapping/combined/A/sp/t10/state_pheno_LODs.RDS",
+  "t10"
 )
 
-plot_df <- bind_rows(A_t0, A_t30) %>%
+plot_df <- bind_rows(A_t0, A_t10) %>%
   mutate(
     state = factor(state, levels = c("RP", "iESR", "RiBi")),
-    time  = factor(time, levels = c("t0", "t30"))
+    time  = factor(time, levels = c("t0", "t10"))
   )
 
 # ---------- Chromosome boundaries (your method) ----------
-chr_map <- A_t30 %>%
+chr_map <- A_t10 %>%
   distinct(marker, pos) %>%
   mutate(chr = str_extract(marker, "^[^_]+")) %>%
   arrange(pos)
@@ -198,6 +198,7 @@ p <- ggplot(plot_df, aes(x = pos, y = LOD, color = state, linetype = time)) +
 p
 
 ggsave("lod_plot.byxrm.stationary.png", p, width = 14, height = 7, dpi = 300, bg = "white")
+
 
 
 ####################################################-----------------------3004
