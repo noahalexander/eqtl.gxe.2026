@@ -601,3 +601,340 @@ timepoint = "t30"
 outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
 
 #
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t0/hotspot_peaks.RDS")
+df = df$G2_M_mating
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(4)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "G2_M_mating"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t0"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+######------cYR1
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t0/hotspot_peaks.RDS")
+df = df$G1_S
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "G1_S"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t0"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+########3
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t0/hotspot_peaks.RDS")
+df = df$G2_M_mating
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2,3)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "G2_M_mating"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t0"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+#####################
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t0/hotspot_peaks.RDS")
+df = df$M_G1_mating
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2,3)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "M_G1_mating"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t0"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+#######
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t0/hotspot_peaks.RDS")
+df = df$S
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2,3)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "S"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t0"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+###############################3
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t30/hotspot_peaks.RDS")
+df = df$G1_S
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2,3)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "G1_S"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t30"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+
+
+###################
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t30/hotspot_peaks.RDS")
+df = df$G2_M_mating
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "G2_M_mating"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t30"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+
+###################
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t30/hotspot_peaks.RDS")
+df = df$M_G1_mating
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "M_G1_mating"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t30"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+###################
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t30/hotspot_peaks.RDS")
+df = df$S
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "S"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t30"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+
+###################
+
+
+df = readRDS("/Users/noahalexander/repeat_fine_mapping/combined/3004/nacl/t30/hotspot_peaks.RDS")
+df = df$Stress
+dim(df)
+df = subset(df, df$chr == "chrX")
+dim(df)
+df = subset(df, df$in.hotspot == "TRUE")
+dim(df)
+nn = names(table(df$bin))
+cat(nn, sep=",")
+
+hrange=c(1,2)
+names(table(df$bin))[hrange]
+df = subset(df, df$bin %in% names(table(df$bin))[hrange])
+nn = names(table(df$bin))
+cat(nn, sep=",")
+dim(df)
+
+ggplot(df, aes(x=df$Beta/df$SE)) + geom_histogram()
+
+
+cross="3004"
+experiment = "nacl"
+subset = "Stress"
+chrom.number = "chrX"
+hrange= hrange
+thresh = 0.05
+correction_meth = "g_SCS"
+timepoint = "t30"
+outlist = enrich.cust(cross,experiment, timepoint, subset, chrom.number, hrange, thresh = 0.05, correction_meth = "g_SCS")
+
+
+
+
+
+
+
+
